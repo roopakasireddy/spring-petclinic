@@ -6,19 +6,6 @@
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
   <version>3.3.0-SNAPSHOT</version>
-  <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>ip-172-31-37-111.ap-south-1.compute.internal-releases</name>
-        <url>http://65.2.146.226:8081/artifactory/petclinic</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>ip-172-31-37-111.ap-south-1.compute.internal-snapshots</name>
-        <url>http://65.2.146.226:8081/artifactory/petclinic</url>
-    </snapshotRepository>
-</distributionManagement>
-
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -49,6 +36,18 @@
 
   </properties>
 
+   <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-37-111.ap-south-1.compute.internal-releases</name>
+        <url>http://65.2.146.226:8081/artifactory/petclinic</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-37-111.ap-south-1.compute.internal-snapshots</name>
+        <url>http://65.2.146.226:8081/artifactory/petclinic</url>
+    </snapshotRepository>
+</distributionManagement>
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
